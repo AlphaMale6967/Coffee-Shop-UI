@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=1024">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Home | Coffee Shop</title>
+    <style>
+        .stock {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-weight: 400;
+            font-size: 25px;
+            margin: 0px 20px;
+        }
+
+        .sidebar-heading {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .main-content {
+            margin-top: 40px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1>Growpartner Coffee Shop</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-dark"
+        style="background-color: rgb(250, 225, 229); min-height: calc(100vh - 50px); float: left; overflow: hidden; width: 22%; display: table-cell;">
+
+        <h2 class="sidebar-heading">
+            Stock Available
+        </h2>
+        <div class="stock">
+            <div>Water</div>
+            <div class="stock-price">1000</div>
+        </div>
+        <div class="stock">
+            <div>Milk</div>
+            <div class="stock-price">1000</div>
+        </div>
+        <div class="stock">
+            <div>Tea</div>
+            <div class="stock-price">200</div>
+        </div>
+        <div class="stock">
+            <div>Coffee</div>
+            <div class="stock-price">200</div>
+        </div>
+        <div class="stock">
+            <div>Sugar</div>
+            <div class="stock-price">500</div>
+        </div>
+        <br>
+        <center>
+            <button type="button" class="btn btn-secondary"
+                style="background-color: rgb(46, 22, 4); width: 70%; height: 3rem;">Refill
+                Stock</button>
+        </center>
+    </div>
+
+    <div class="main-content">
+        <h1 style="text-align: center;">Welcome to the Coffee Shop</h1>
+        <br>
+        <br>
+            <div style="margin-left: 50%;">
+                <div>
+                    <form>
+                        <fieldset>
+                            <h3>Select order preferences</h3>
+                            <div class="mb-3">
+                                <select class="form-select" style="width: 350px;">
+                                    <option disabled selected>Select Drink Type</option>
+                                    <option value="">Water</option>
+                                    <option value="">Milk</option>
+                                    <option value="">Tea</option>
+                                    <option value="">Coffee</option>
+                                    <option value="">Sugar</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="number" id="disabledTextInput" class="form-control" placeholder="Enter no. of cups" style="width: 350px;">
+                            </div>
+                            <div class="mb-3">
+                                <input type="checkbox" name="sugar" id="sugar"> With Sugar
+                          </div>
+                          <button type="button" class="btn btn-secondary"
+                          style="background-color: rgb(46, 22, 4); width: 350px; height: 3rem;">Pay Rs. 0</button>
+                        </fieldset>
+                    </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
